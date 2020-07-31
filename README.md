@@ -2,6 +2,10 @@
 
 Simple Digits Recognition project using kNN without any library.
 
+## Getting Started
+
+
+
 ## Built With
 
 * Visual Studio 2019 - frame work
