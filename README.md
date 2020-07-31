@@ -5,7 +5,7 @@ Simple Digits Recognition project using kNN without any library.
 ## Built With
 
 * Visual Studio 2019 - frame work
-* Python 3.7.
+* Python 3.7.0
 
 ## Authors
 
