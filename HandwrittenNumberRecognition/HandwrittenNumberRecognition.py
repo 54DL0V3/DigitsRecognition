@@ -123,9 +123,9 @@ def Test(imgDir,n):
 
 
 def main():
-    #GetSamples.getSamples("RawSamples","Samples",False,1)
+    GetSamples.getSamples("RawSamples","Samples",False,1)
 
-    #Classify(True)
+    Classify(True)
 
     Test("TestSamples/10.jpg",5)
     cv.waitKey(0)
