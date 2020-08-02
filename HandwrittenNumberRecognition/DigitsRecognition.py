@@ -1,9 +1,15 @@
-import GetSamples
 import cv2 as cv
 import os
 import numpy as np
+from scipy import misc
+from sklearn.decomposition import PCA
+
 import Preprocess
 import myMath
+import GetSamples
+import myHoughLine
+
+np.random.seed(1)
 
 inputPath = 'RawSamples'
 outputFolder = 'Samples'
@@ -121,13 +127,13 @@ def Test(imgDir,n):
     return
 #end function
 
-
 def main():
-    GetSamples.getSamples("RawSamples","Samples",False,1)
+    GetSamples.getSamples("RawSamples","Samples",True,1)
 
-    Classify(True)
+    #Classify(True)
 
-    Test("TestSamples/10.jpg",5)
+    #Test("TestSamples/10.jpg",5)
+
     cv.waitKey(0)
     cv.destroyAllWindows()
     return

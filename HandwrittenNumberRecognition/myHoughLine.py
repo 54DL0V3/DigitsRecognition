@@ -34,7 +34,8 @@ def myHoughLine(imgThresh,img, minVertical, minHorizontal, showSteps):
                     if(imgThresh[y,x]==255):
                         houghLine[i,j]+=1
             if (houghLine[i,j] < minHorizontal):
-                houghLine[i,j] = 0
+                #houghLine[i,j] = 0
+                pass
             else:
                 # Draw possible lines
                 for x in range (w):
@@ -64,7 +65,8 @@ def myHoughLine(imgThresh,img, minVertical, minHorizontal, showSteps):
                     if(imgThresh[y,x]==255):
                         houghLine[i,j]+=1
             if (houghLine[i,j] < minVertical):
-                houghLine[i,j] = 0
+                #houghLine[i,j] = 0
+                pass
             else:
                 # Draw possible lines
                 for y in range (h):

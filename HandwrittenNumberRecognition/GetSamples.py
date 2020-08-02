@@ -172,15 +172,15 @@ def getSamplesFromFile(file,inputPath,outputFolder,showSteps, mode):
                             cv.imshow("boxThresh",boxThresh)
                             cv.waitKey(1)
                         # save sample
-                        if (mode==1):
-                            dir = outputFolder+"/"+str(count)+"/"+fileName
-                            if (os.path.exists(dir)):
-                                pass
-                            else:
-                                os.mkdir(dir)
-                            cv.imwrite(dir+"/"+str(count1)+".jpg",box)
-                        elif (mode==0):
-                            cv.imwrite(outputFolder+"/"+str(count2)+".jpg",box)
+                        #if (mode==1):
+                        #    dir = outputFolder+"/"+str(count)+"/"+fileName
+                        #    if (os.path.exists(dir)):
+                        #        pass
+                        #    else:
+                        #        os.mkdir(dir)
+                        #    cv.imwrite(dir+"/"+str(count1)+".jpg",box)
+                        #elif (mode==0):
+                        #    cv.imwrite(outputFolder+"/"+str(count2)+".jpg",box)
 
                         k=l
                         count1+=1
@@ -195,10 +195,6 @@ def getSamplesFromFile(file,inputPath,outputFolder,showSteps, mode):
         else: j+=1
 
 
-    #cv.imshow("img",imgThresh)
-    #cv.imshow("yBlur",yBlur)
-    #cv.waitKey(0)
-    #cv.destroyAllWindows()
     return
 #end function
 

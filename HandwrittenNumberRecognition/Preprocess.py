@@ -105,58 +105,7 @@ def makeThin(imgThresh):
             else:
                 i+=1
 
-    #for a in range(0,h+w-1):
-    #    i = 0
-    #    while i<h-1:
-    #        j = a - i
-    #        if j < 1 or j>=w :
-    #            i+=1
-    #        elif imgThresh[i,j]==0 and imgThresh[i+1,j-1]==255 :
-    #            s= i+1
-    #            e=s
-    #            c=True
-    #            if imgThresh[s,a-s] != 0:
-    #                for m in range(s,h-1):
-    #                    n = a - m
-    #                    if 1<n<w and imgThresh[m,n]==255 and imgThresh[m+1,n-1]==0:
-    #                        c = False
-    #                        e = m
-    #                        break
-    #                if c: e = h-1
-    #                imgThin[(e-s)//2+s,a-((e-s)//2+s)]=255
-    #            i=e+1
-    #        else:
-    #            i+=1
-
-    #for a in range(-w+1,h):
-    #    i = 0
-    #    while i<h-1:
-    #        j = i-a
-    #        if j < 0 or j>=w-1 :
-    #            i+=1
-    #        elif imgThresh[i,j]==0 and imgThresh[i+1,j+1]==255 :
-    #            s= i+1
-    #            e=s
-    #            c=True
-    #            if imgThresh[s,s-a] != 0:
-    #                for m in range(s,h-1):
-    #                    n = m-a
-    #                    if 0<=n<w-1 and imgThresh[m,n]==255 and imgThresh[m+1,n+1]==0:
-    #                        c = False
-    #                        e = m
-    #                        break
-    #                if c: e = h-1
-    #                try:
-    #                    imgThin[(e-s)//2+s,((e-s)//2+s)-a]=255
-    #                except:
-    #                    pass
-    #            i=e+1
-    #        else:
-    #            i+=1
-
-
-    #######################################
-    
+  
     l = np.array([1,2,0])
     r = np.array([1,2,0])
     for i in range(h):

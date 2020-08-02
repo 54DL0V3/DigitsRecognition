@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0d66b639-07c0-404c-a298-29584bf6336e</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>HandwrittenNumberRecognition.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>DigitsRecognition.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>HandwrittenNumberRecognition</Name>
+    <Name>DigitsRecognition</Name>
     <RootNamespace>HandwrittenNumberRecognition</RootNamespace>
     <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
@@ -25,10 +26,7 @@
     <Compile Include="GetSamples.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="HandwrittenNumberRecognition.py" />
-    <Compile Include="Classify.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="DigitsRecognition.py" />
     <Compile Include="myHoughLine.py">
       <SubType>Code</SubType>
     </Compile>
