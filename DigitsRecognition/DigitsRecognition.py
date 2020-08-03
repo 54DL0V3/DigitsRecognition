@@ -128,7 +128,10 @@ def Test(imgDir,n):
 #end function
 
 def main():
-    GetSamples.getSamples("RawSamples","Samples",True,1)
+
+    print("__DigitsRecognition__")
+
+    #GetSamples.getSamples("RawSamples","Samples",True,1)
 
     #Classify(True)
 
