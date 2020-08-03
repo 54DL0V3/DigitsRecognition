@@ -4,7 +4,7 @@ Simple Digits Recognition project using kNN without any library.
 
 ## Getting Started
 
-
+For now just view DigitsRecognition only
 
 ## Built With
 
