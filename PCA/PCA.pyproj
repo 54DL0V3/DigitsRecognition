@@ -22,7 +22,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="PCA.py" />
-    <Compile Include="Preprocess.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classified\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classified\0.txt" />
+    <Content Include="Classified\1.txt" />
+    <Content Include="Classified\2.txt" />
+    <Content Include="Classified\3.txt" />
+    <Content Include="Classified\4.txt" />
+    <Content Include="Classified\5.txt" />
+    <Content Include="Classified\6.txt" />
+    <Content Include="Classified\7.txt" />
+    <Content Include="Classified\8.txt" />
+    <Content Include="Classified\9.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
