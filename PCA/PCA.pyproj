@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>PCA</Name>
     <RootNamespace>PCA</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,18 +26,75 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classified\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Classified\0.txt" />
     <Content Include="Classified\1.txt" />
     <Content Include="Classified\2.txt" />
+    <Content Include="Classified\26x14.0.txt" />
+    <Content Include="Classified\26x14.1.txt" />
+    <Content Include="Classified\26x14.2.txt" />
+    <Content Include="Classified\26x14.3.txt" />
+    <Content Include="Classified\26x14.4.txt" />
+    <Content Include="Classified\26x14.5.txt" />
+    <Content Include="Classified\26x14.6.txt" />
+    <Content Include="Classified\26x14.7.txt" />
+    <Content Include="Classified\26x14.8.txt" />
+    <Content Include="Classified\26x14.9.txt" />
     <Content Include="Classified\3.txt" />
     <Content Include="Classified\4.txt" />
     <Content Include="Classified\5.txt" />
+    <Content Include="Classified\53x28.0.txt" />
+    <Content Include="Classified\53x28.1.txt" />
+    <Content Include="Classified\53x28.2.txt" />
+    <Content Include="Classified\53x28.3.txt" />
+    <Content Include="Classified\53x28.4.txt" />
+    <Content Include="Classified\53x28.5.txt" />
+    <Content Include="Classified\53x28.6.txt" />
+    <Content Include="Classified\53x28.7.txt" />
+    <Content Include="Classified\53x28.8.txt" />
+    <Content Include="Classified\53x28.9.txt" />
     <Content Include="Classified\6.txt" />
     <Content Include="Classified\7.txt" />
     <Content Include="Classified\8.txt" />
     <Content Include="Classified\9.txt" />
+    <Content Include="Data\data.53x28.10.txt" />
+    <Content Include="Data\data.53x28.100.txt" />
+    <Content Include="Data\data.53x28.1000.txt" />
+    <Content Include="Data\data.53x28.1484.txt" />
+    <Content Include="Data\data.53x28.250.txt" />
+    <Content Include="Data\data.53x28.500.txt" />
+    <Content Include="Data\mean.53x28.10.txt" />
+    <Content Include="Data\mean.53x28.100.txt" />
+    <Content Include="Data\mean.53x28.1000.txt" />
+    <Content Include="Data\mean.53x28.1484.txt" />
+    <Content Include="Data\mean.53x28.250.txt" />
+    <Content Include="Data\mean.53x28.500.txt" />
+    <Content Include="Data\originalData.53x28.10.txt" />
+    <Content Include="Data\originalData.53x28.100.txt" />
+    <Content Include="Data\originalData.53x28.1000.txt" />
+    <Content Include="Data\originalData.53x28.1484.txt" />
+    <Content Include="Data\originalData.53x28.250.txt" />
+    <Content Include="Data\originalData.53x28.500.txt" />
+    <Content Include="Data\principalComponent.53x28.10.txt" />
+    <Content Include="Data\principalComponent.53x28.100.txt" />
+    <Content Include="Data\principalComponent.53x28.1000.txt" />
+    <Content Include="Data\principalComponent.53x28.1484.txt" />
+    <Content Include="Data\principalComponent.53x28.250.txt" />
+    <Content Include="Data\principalComponent.53x28.500.txt" />
+    <Content Include="Data\regeneratedData.53x28.10.txt" />
+    <Content Include="Data\regeneratedData.53x28.100.txt" />
+    <Content Include="Data\regeneratedData.53x28.1000.txt" />
+    <Content Include="Data\regeneratedData.53x28.1484.txt" />
+    <Content Include="Data\regeneratedData.53x28.250.txt" />
+    <Content Include="Data\regeneratedData.53x28.500.txt" />
+    <Content Include="Data\testResult.53x28.10.txt" />
+    <Content Include="Data\testResult.53x28.100.txt" />
+    <Content Include="Data\testResult.53x28.1000.txt" />
+    <Content Include="Data\testResult.53x28.1484.txt" />
+    <Content Include="Data\testResult.53x28.250.txt" />
+    <Content Include="Data\testResult.53x28.500.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

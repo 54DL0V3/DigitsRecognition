@@ -6,8 +6,8 @@ import myHoughLine
 
 
 def getSamples(inputPath,outputFolder,showSteps,mode):
-    # mode == 1: get training sample
-    # mode == 0: get test sample
+    # mode = 1: get training sample
+    # mode = 0: get test sample
     print("Getting samples ...")
     listFiles = os.listdir(inputPath)
     for file in listFiles:
@@ -27,7 +27,7 @@ def getSamplesFromFile(file,inputPath,outputFolder,showSteps, mode):
     (fileName,fileType) = file.split(".") 
     img = cv.imread(inputPath+ "/" + fileName +"."+ fileType)
 
-    img = cv.resize(img,dsize=(2100,1480))
+    img = cv.resize(img,dsize=(2100,1480),interpolation=cv.INTER_AREA)
 
     (h,w,d) = img.shape
 
